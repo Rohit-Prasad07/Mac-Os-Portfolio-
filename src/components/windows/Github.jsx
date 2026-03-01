@@ -20,9 +20,9 @@ return <div className="card">
 }
 
 
-const Github = ()=>{
+const Github = ({windowName,windowState,setwindowState})=>{
     return (
-       <MackWindow>
+       <MackWindow windowName={windowName} windowState={windowState} setwindowState={setwindowState} >
                <div className="cards">
                   {githubData.map(project => {
                     return <GitCard data={project}/>
